@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>LeftRight Systems × MetLife — SOH Opportunities</title>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#F2F4F1;--alt:#E6EBE7;--ink:#111816;--muted:#59635F;--line:#C8D0CC;--petrol:#165B5F;--dark:#10474A;--lime:#C7E54A;--inv:#0B1514;--fg:#F0F5F2}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:Onest,Arial,sans-serif}body{overflow:hidden}a{color:inherit}.deck{position:relative;width:100vw;height:100vh;height:100dvh}.slide{position:absolute;inset:0;display:flex;flex-direction:column;padding:clamp(26px,4.6vw,76px) clamp(24px,6.1vw,112px) 40px;opacity:0;transform:translateY(18px);pointer-events:none;transition:opacity .26s ease,transform .26s ease;overflow:auto}.slide.active{opacity:1;transform:none;pointer-events:auto}.kicker,.mono,.footer,.eyebrow,.meta,.tiny{font-family:'IBM Plex Mono',monospace;font-weight:400}.kicker{font-size:12px;letter-spacing:.075em;color:var(--petrol);text-transform:uppercase}.meta{font-size:12px;color:var(--muted);text-transform:uppercase}.slide-head{margin:10px 0 34px}.title{font-size:clamp(36px,4.1vw,69px);font-weight:500;line-height:1.065;letter-spacing:-.045em;max-width:21ch;text-wrap:balance;margin:0}.title.wide{max-width:27ch}.hero{font-size:clamp(49px,6vw,93px);max-width:16ch;line-height:.99}.deck p{font-size:clamp(16px,1.48vw,22px);line-height:1.48;max-width:66ch;margin:0;color:var(--muted)}.lead{font-size:clamp(19px,2vw,29px)!important;color:var(--ink)!important;max-width:46ch!important}.footer{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11px;letter-spacing:.04em;gap:25px}.footer .number{margin-right:120px}.body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}.split{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:7%;align-items:center}.rule{border-top:1px solid var(--line);padding-top:15px}.statement{border-left:4px solid var(--petrol);padding-left:24px;font-size:clamp(20px,2.3vw,35px);line-height:1.32;letter-spacing:-.03em}.micro{font-size:14px!important}.rail{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:32px}.stage{border-top:2px solid var(--line);padding:19px 25px 0 0;min-height:175px}.stage:first-child{border-color:var(--petrol)}.stage .id{font-family:'IBM Plex Mono';font-size:13px;color:var(--petrol)}.stage h3{font-weight:500;font-size:clamp(22px,2.4vw,36px);margin:12px 0 10px;letter-spacing:-.035em}.stage p{font-size:16px}.areas{display:grid;grid-template-columns:1fr 1fr;gap:26px 70px}.area{border-top:1px solid var(--line);padding-top:18px;display:grid;grid-template-columns:44px 1fr;gap:14px}.area .index{font-family:'IBM Plex Mono';font-size:15px;color:var(--petrol)}.area h3{font-size:clamp(23px,2.4vw,34px);font-weight:500;line-height:1.1;letter-spacing:-.035em;margin:0 0 12px}.area p{font-size:16px}.transform{display:grid;grid-template-columns:minmax(0,1fr) 56px minmax(0,1.15fr);align-items:stretch;gap:15px;margin:26px 0}.state{background:var(--alt);min-height:218px;padding:28px 28px 25px;display:flex;flex-direction:column;justify-content:space-between}.state.next{background:#DAE6DF;border-top:3px solid var(--petrol)}.state .eyebrow{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}.state .big{font-size:clamp(22px,2.25vw,34px);font-weight:500;line-height:1.2;letter-spacing:-.03em;max-width:18ch}.connector{display:flex;justify-content:center;align-items:center;color:var(--petrol);font-size:34px}.impact{display:flex;gap:24px;align-items:baseline;border-top:1px solid var(--line);padding-top:17px;flex-wrap:wrap}.impact .label{font-family:'IBM Plex Mono';font-size:11px;color:var(--petrol);text-transform:uppercase;min-width:135px}.impact strong{font-weight:500;font-size:clamp(17px,1.62vw,23px)}.subpoints{display:flex;gap:20px;flex-wrap:wrap;margin-top:16px}.subpoints span{font:12px 'IBM Plex Mono';color:var(--muted)}.subpoints span:before{content:'— ';color:var(--petrol)}.ledger{display:grid;grid-template-columns:1fr;gap:0}.ledger-row{display:grid;grid-template-columns:1.05fr 1.45fr;gap:36px;padding:19px 0;border-top:1px solid var(--line);align-items:start}.ledger-row h3{font-size:clamp(19px,2vw,29px);font-weight:500;letter-spacing:-.025em;margin:0}.ledger-row p{font-size:clamp(15px,1.4vw,19px)}.projects{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:32px}.project{border-top:2px solid var(--petrol);padding-top:20px}.project .mono{font-size:11px;color:var(--petrol)}.project h3{font-weight:500;font-size:clamp(19px,1.85vw,27px);letter-spacing:-.027em;line-height:1.2;margin:12px 0}.project p{font-size:15px}.tagline{font-family:'IBM Plex Mono';font-size:11px;color:var(--muted);margin-top:20px;line-height:1.5}.team{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.person{border-top:1px solid var(--line);padding-top:21px}.person h3{font-size:clamp(22px,2.2vw,31px);font-weight:500;margin:0 0 9px}.person .mono{font-size:11px;color:var(--petrol);text-transform:uppercase}.person p{font-size:16px;margin-top:15px}.inverse{background:var(--inv);color:var(--fg)}.inverse p{color:#B6C7C0}.inverse .kicker,.inverse .meta{color:var(--lime)}.inverse .footer{border-color:#364B45;color:#9FB1A9}.inverse .cta{color:var(--lime);font-size:clamp(27px,3vw,46px);font-weight:500;margin-top:28px;letter-spacing:-.025em}.inverse .thin{border-top:1px solid #3F544B;padding-top:20px}.note{font-family:'IBM Plex Mono';font-size:11px;color:var(--muted);margin-top:20px}.controls{position:fixed;right:25px;bottom:19px;z-index:10;display:flex;align-items:center;gap:4px;background:#E4EAE5;border:1px solid var(--line);padding:4px}.controls button{border:0;background:transparent;padding:10px 14px;font:15px 'IBM Plex Mono';cursor:pointer;color:var(--ink)}.controls button:hover{background:#CFDCD4}.controls .counter{font:11px 'IBM Plex Mono';padding:0 7px;min-width:54px;text-align:center}.dot{display:inline-block;width:8px;height:8px;background:var(--lime);margin-right:9px}.soft{color:var(--muted)}.highlight{color:var(--petrol)}.bridge{border-top:1px solid var(--line);padding-top:17px;margin-top:24px;display:flex;justify-content:space-between;gap:30px}.bridge p{font-size:16px}.spacer{height:3vh}.fit{max-width:1000px}.credline{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 2fr;gap:40px;padding-top:21px;margin-top:28px}.credline .mono{font-size:12px;color:var(--petrol)}.credline p{font-size:clamp(16px,1.65vw,22px)}
+@media(max-width:850px){body{overflow:auto}.slide{padding:32px 25px 62px}.title{font-size:clamp(32px,7.2vw,53px)}.hero{font-size:clamp(43px,8.5vw,70px)}.split,.areas,.team,.projects{grid-template-columns:1fr;gap:22px}.body{justify-content:flex-start;margin-top:18px}.rail{grid-template-columns:1fr 1fr;gap:10px}.stage{min-height:125px}.transform{grid-template-columns:1fr;gap:8px}.state{min-height:130px;padding:18px}.state .big{max-width:none}.connector{transform:rotate(90deg);font-size:24px;height:25px}.ledger-row{grid-template-columns:1fr;gap:9px;padding:15px 0}.footer .number{margin-right:90px}.slide-head{margin-bottom:20px}.project p,.person p{font-size:15px}.controls{right:10px;bottom:9px}.credline{grid-template-columns:1fr;gap:9px}}@media(max-height:720px) and (min-width:851px){.slide{padding-top:24px;padding-bottom:25px}.title{font-size:clamp(34px,3.65vw,59px)}.hero{font-size:clamp(45px,5vw,76px)}.slide-head{margin-bottom:14px}.state{min-height:170px;padding:18px}.stage{min-height:130px}.rail{margin-top:13px}.projects{gap:18px}}@media(prefers-reduced-motion:reduce){.slide{transition:none;transform:none}}@media print{body{overflow:visible}.deck{height:auto}.slide{position:relative;opacity:1;transform:none;pointer-events:auto;width:100%;height:100vh;min-height:650px;page-break-after:always;break-after:page;overflow:hidden}.controls{display:none}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* V2 visual refinement — derived from LeftRight editorial-technical system */
+.slide{isolation:isolate;transition:opacity .22s ease,transform .32s cubic-bezier(.22,1,.36,1)}
+.slide.active .body{animation:slideReveal .48s cubic-bezier(.22,1,.36,1) both}
+@keyframes slideReveal{from{opacity:.05;transform:translateY(18px)}to{opacity:1;transform:none}}
+.slide::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--petrol);z-index:2}
+.slide.brand-cover::before,.slide.inverse::before{background:var(--lime)}
+.brand-cover{background:var(--inv);color:var(--fg)}
+.brand-cover .kicker,.brand-cover .meta{color:var(--lime)}
+.brand-cover p{color:#BCD0C6}
+.brand-cover .lead{color:var(--fg)!important}
+.brand-cover .footer{border-color:#46605A;color:#B6C8BF}
+.brand-cover .statement{border-color:var(--lime);color:var(--fg)}
+.brand-cover .rule{border-color:#46605A}
+.brandbar{display:flex;align-items:center;justify-content:space-between;gap:40px;padding-bottom:25px;border-bottom:1px solid #46605A}
+.lrsmark{display:flex;align-items:center;gap:16px;color:#F0F5F2}
+.lrsmark .mark{display:grid;grid-template-columns:repeat(2,26px);gap:3px;transform:skewX(-7deg)}
+.lrsmark .mark i{display:block;width:26px;height:34px;background:var(--petrol);border:2px solid #91B9AC}
+.lrsmark .mark i:nth-child(2){background:var(--lime);border-color:var(--lime)}
+.lrsmark .wordmark{font-weight:500;letter-spacing:-.045em;font-size:23px;line-height:1.0}
+.lrsmark .wordmark small{display:block;font:10px 'IBM Plex Mono',monospace;letter-spacing:.15em;margin-top:7px;color:#B0C3B8}
+.brandbar .partner{display:flex;align-items:center;gap:30px}
+.brandbar .x{font:24px 'IBM Plex Mono';color:#65817A}
+.met-logo{width:178px;height:51px;object-fit:contain;filter:brightness(0) invert(1)}
+.brand-cover .hero{font-size:clamp(58px,6.7vw,112px);max-width:16ch;line-height:.975}
+.brand-cover .hero::after{content:"";display:block;width:68px;height:6px;margin-top:32px;background:var(--lime)}
+.brand-cover .statement{font-size:clamp(20px,2.3vw,34px)}
+.brand-cover .cover-spec{font:11px 'IBM Plex Mono';color:var(--lime);letter-spacing:.08em;margin-top:22px}
+.slide .body:has(.transform){justify-content:center}
+.slide .transform{gap:0;grid-template-columns:1fr 70px 1.18fr;margin:30px 0 34px;align-items:center}
+.slide .state{min-height:265px;padding:31px;background:transparent;border-top:1px solid var(--hairline,var(--line));border-bottom:1px solid var(--line)}
+.slide .state.next{background:var(--alt);border:1px solid var(--line);border-top:5px solid var(--petrol);padding:28px 31px}
+.slide .state .big{font-size:clamp(23px,2.45vw,38px);max-width:22ch;line-height:1.17}
+.slide .connector{position:relative;color:var(--petrol);font-size:0;height:2px;background:var(--petrol)}
+.slide .connector::after{content:"";position:absolute;right:0;top:-5px;width:10px;height:10px;border-right:2px solid var(--petrol);border-top:2px solid var(--petrol);transform:rotate(45deg)}
+.slide .impact{padding-top:20px}
+.slide .impact .label{letter-spacing:.065em}
+.slide .impact strong{line-height:1.25}
+.areas .area{padding-top:24px;min-height:170px}
+.areas .area:nth-child(1){border-top:4px solid var(--petrol)}
+.areas .area:nth-child(4){border-top:4px solid var(--petrol)}
+.stage:first-child{border-top:5px solid var(--petrol)}
+.stage:not(:first-child){border-top:2px solid var(--line)}
+.projects .project:nth-child(2){border-top-color:var(--line)}
+.projects .project:nth-child(3){border-top-color:var(--line)}
+.projects .project h3{font-size:clamp(23px,2.25vw,35px)}
+.team .person:first-child{border-top:4px solid var(--petrol)}
+.credline{border-top:4px solid var(--petrol)}
+.closing-original .hero{max-width:17ch;font-size:clamp(52px,6.4vw,100px)}
+.closing-original .cta{display:inline-block;border-bottom:2px solid var(--lime);padding-bottom:14px;max-width:19ch;font-size:clamp(27px,3.3vw,49px);line-height:1.14}
+.closing-original .closing-decision{font-size:clamp(19px,2vw,28px);line-height:1.35;color:#D5E3DB;margin-top:32px;max-width:30ch}
+.closing-original .workshop{border-left:3px solid var(--lime);padding-left:24px}
+.closing-original .workshop .mono{color:var(--lime);font-size:12px}
+.closing-original .workshop h3{font-size:clamp(30px,3.1vw,44px);line-height:1.13;letter-spacing:-.035em;font-weight:500;margin:14px 0 24px}
+.closing-original .workshop p{font-size:clamp(18px,1.9vw,24px);color:#DAE6DF}
+.closing-original .workshop .source-url{display:block;margin-top:55px;color:var(--lime);font:12px 'IBM Plex Mono'}
+@media(max-width:850px){.brandbar{gap:10px;flex-wrap:wrap}.met-logo{width:120px}.lrsmark .wordmark{font-size:16px}.lrsmark .mark{grid-template-columns:repeat(2,17px)}.lrsmark .mark i{width:17px;height:24px}.brand-cover .hero{font-size:clamp(45px,9vw,75px)}.slide .transform{grid-template-columns:1fr;gap:12px}.slide .state,.slide .state.next{min-height:140px;padding:18px}.slide .connector{height:24px;width:2px;margin:0 auto}.slide .connector::after{right:-4px;top:auto;bottom:0;transform:rotate(135deg)}.closing-original .hero{font-size:clamp(40px,8vw,67px)}}
+@media print{.slide.active .body{animation:none}}
+
+/* v3: restoration of editorial technical presentation language */
+.progress-wrap{position:fixed;top:0;left:0;right:0;height:12px;background:#D5DED8;z-index:100;overflow:hidden}
+.progress-fill{height:100%;width:9.09%;background:var(--petrol);transition:width .35s cubic-bezier(.22,1,.36,1),background .35s}
+.slide{padding-top:clamp(37px,5vw,85px)}
+.slide::before{display:none!important}
+/* Alternating planes are purposeful, and retain legible contrast */
+.slide:nth-of-type(3n + 2){background:var(--alt)}
+.slide:nth-of-type(3n + 2) .state.next{background:var(--bg)}
+.slide:nth-of-type(3n + 2) .controls{background:var(--alt)}
+.slide:nth-of-type(6){background:#10474A;color:var(--fg)}
+.slide:nth-of-type(6) .kicker,.slide:nth-of-type(6) .impact .label{color:var(--lime)}
+.slide:nth-of-type(6) p,.slide:nth-of-type(6) .eyebrow,.slide:nth-of-type(6) .subpoints span{color:#D0DDD5}
+.slide:nth-of-type(6) .state{border-color:#63817B}
+.slide:nth-of-type(6) .state.next{background:#1D6263;border-color:#92ADA6;border-top-color:var(--lime)}
+.slide:nth-of-type(6) .impact,.slide:nth-of-type(6) .footer{border-color:#698680}
+.slide:nth-of-type(6) .footer{color:#D0DDD5}
+.slide:nth-of-type(6) .connector{background:var(--lime)}
+.slide:nth-of-type(6) .connector::after{border-color:var(--lime)}
+.light-cover{background:var(--bg)!important;color:var(--ink)!important}
+.light-cover p,.light-cover .lead{color:var(--muted)!important}
+.light-cover .kicker,.light-cover .meta,.light-cover .cover-spec{color:var(--petrol)!important}
+.light-cover .footer{border-color:var(--line);color:var(--muted)}
+.light-cover .brandbar{border-color:var(--line)}
+.light-cover .lrsmark{color:var(--ink)}
+.light-cover .lrsmark .wordmark small{color:var(--muted)}
+.light-cover .statement{color:var(--ink);border-color:var(--petrol)}
+.light-cover .rule{border-color:var(--line)}
+.light-cover .hero::after{background:var(--petrol)}
+.light-cover .met-logo{filter:none}
+.light-cover .brandbar .partner{margin-left:auto}
+.light-cover .brandbar{padding-bottom:32px}
+.light-cover .brandbar .wordmark span{color:var(--petrol)!important}
+.stage-icon{display:block;color:var(--petrol);margin:16px 0 0;width:28px;height:28px}
+.stage h3{margin-top:12px}
+.slide:nth-of-type(6) .stage-icon{color:var(--lime)}
+/* Better measure + widows */
+.title,.area h3,.project-row h3,.state .big,.statement,.closing-original .workshop h3{text-wrap:balance;overflow-wrap:normal}
+.project-ledger{display:grid;grid-template-columns:1fr;gap:0}
+.project-row{border-top:1px solid var(--line);padding:21px 0;display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) minmax(0,1.2fr);column-gap:25px;align-items:start}
+.project-row:first-child{border-top:4px solid var(--petrol)}
+.project-row .mono{grid-column:1;grid-row:1 / span 2;color:var(--petrol);font:11px 'IBM Plex Mono',monospace;line-height:1.5}
+.project-row h3{grid-column:2;grid-row:1;line-height:1.2;font-size:clamp(21px,2vw,30px);font-weight:500;letter-spacing:-.027em;margin:0}
+.project-row p{grid-column:3;grid-row:1;font-size:clamp(15px,1.25vw,18px);line-height:1.42}
+.project-row .tagline{grid-column:2 / 4;grid-row:2;margin-top:14px;font-size:10px;letter-spacing:.05em}
+@media(max-width:850px){.progress-wrap{height:9px}.slide{padding-top:42px}.project-row{grid-template-columns:1fr;gap:8px}.project-row .mono,.project-row h3,.project-row p,.project-row .tagline{grid-column:1;grid-row:auto}.project-row .tagline{margin-top:2px}}
+@media print{.progress-wrap{display:none}.slide{background:var(--bg);}.slide:nth-of-type(6){background:#10474A}}
+
+/* v4 — consistent four-opportunity taxonomy and readable presentation spacing */
+.slide.black-closing{background:#0B1514!important;color:#F0F5F2!important}
+.slide.black-closing .kicker,.slide.black-closing .workshop .mono,.slide.black-closing .meta{color:#C7E54A!important}
+.slide.black-closing .footer{border-color:#364B45;color:#9FB1A9}
+.slide.black-closing p{color:#DAE6DF}
+.slide.black-closing .closing-decision{color:#D5E3DB!important}
+/* Overview: category anchors are persistent across the next four slides. */
+.areas{column-gap:clamp(34px,5vw,82px);row-gap:clamp(20px,3.4vh,42px)}
+.areas .area{grid-template-columns:42px minmax(0,1fr);gap:15px;padding-top:20px;min-height:0}
+.area-category{font:11px 'IBM Plex Mono',monospace;letter-spacing:.025em;color:var(--petrol);text-transform:uppercase;margin:0 0 9px}
+.areas .area h3{max-width:23ch;text-wrap:balance;line-height:1.16;margin:0 0 9px;font-size:clamp(23px,2.25vw,33px)}
+.areas .area p{font-size:clamp(15px,1.3vw,18px);line-height:1.4;max-width:33ch;text-wrap:pretty}
+/* Detail: exact overview headline appears as the dominant title, with the use-case statement beneath it. */
+.opportunity-detail .slide-head{margin:14px 0 16px}
+.opportunity-detail .opportunity-title{font-size:clamp(36px,3.8vw,60px);line-height:1.05;max-width:27ch;text-wrap:balance}
+.opportunity-detail .opportunity-deckline{font-size:clamp(17px,1.55vw,23px);line-height:1.33;color:var(--muted);margin-top:13px;max-width:63ch;text-wrap:pretty}
+.opportunity-detail:nth-of-type(6) .opportunity-deckline{color:#D0DDD5}
+.opportunity-detail .body{justify-content:flex-start!important}
+.opportunity-detail .transform{margin:14px 0 24px;grid-template-columns:minmax(0,1fr) 54px minmax(0,1.12fr);gap:0}
+.opportunity-detail .state{min-height:212px;padding:24px 27px;gap:23px}
+.opportunity-detail .state.next{padding:21px 27px}
+.opportunity-detail .state .big{font-size:clamp(21px,2.05vw,31px);line-height:1.23;max-width:27ch;text-wrap:pretty}
+.opportunity-detail .state .eyebrow{font-size:12px;line-height:1.4}
+.opportunity-detail .impact{display:grid;grid-template-columns:126px minmax(0,1fr);align-items:baseline;column-gap:24px;row-gap:5px;padding-top:14px}
+.opportunity-detail .impact .label{min-width:0}
+.opportunity-detail .impact strong{font-size:clamp(16px,1.45vw,21px);line-height:1.3;text-wrap:pretty}
+.opportunity-detail .subpoints{margin:12px 0 3px;gap:9px 19px}
+.opportunity-detail .subpoints span{font-size:12px;line-height:1.35}
+.opportunity-detail .impact[style]{margin-top:12px!important}
+.opportunity-detail .footer{margin-top:auto}
+@media(max-height:850px) and (min-width:851px){
+ .opportunity-detail .slide-head{margin:7px 0 10px}
+ .opportunity-detail .opportunity-title{font-size:clamp(33px,3.3vw,52px)}
+ .opportunity-detail .opportunity-deckline{margin-top:8px;font-size:clamp(16px,1.35vw,20px)}
+ .opportunity-detail .transform{margin:9px 0 14px}
+ .opportunity-detail .state{min-height:175px;padding:17px 22px;gap:15px}
+ .opportunity-detail .state.next{padding:14px 22px}
+ .opportunity-detail .state .big{font-size:clamp(19px,1.9vw,27px)}
+ .opportunity-detail .impact{padding-top:11px}
+ .opportunity-detail .subpoints{margin-top:9px}
+}
+@media(max-width:850px){
+ .opportunity-detail .transform{grid-template-columns:1fr;gap:11px}
+ .opportunity-detail .state,.opportunity-detail .state.next{min-height:125px;padding:19px}
+ .opportunity-detail .state .big{max-width:none}
+ .opportunity-detail .impact{grid-template-columns:1fr;gap:5px}
+ .opportunity-detail .opportunity-title{font-size:clamp(31px,7vw,47px)}
+ .opportunity-detail .opportunity-deckline{font-size:17px}
+ .areas .area{padding-top:13px}
+}
+
+/* V11: semantic hierarchy and proximity corrections. Applies only to MetLife opportunity section. */
+@media (min-width:851px) {
+ .slide.opportunity-detail {padding-top:clamp(46px,5.8vh,68px)!important; padding-bottom:clamp(28px,3.6vh,45px)!important;}
+ .slide.opportunity-detail .opportunity-head {margin:clamp(12px,1.8vh,22px) 0 clamp(22px,3.4vh,38px)!important;}
+ .slide.opportunity-detail .opportunity-content {display:flex!important; flex:1 1 auto!important;min-height:0!important; flex-direction:column!important;gap:clamp(26px,4.2vh,43px)!important;justify-content:space-between!important;padding:0!important;margin:0!important;}
+ .slide.opportunity-detail .transform {display:grid!important;grid-template-columns:minmax(0,1fr) 72px minmax(0,1fr)!important; gap:clamp(12px,1.5vw,25px)!important;align-items:stretch!important;flex:1 1 auto!important;min-height:180px!important;margin:0!important;}
+ .slide.opportunity-detail .state,.slide.opportunity-detail .state.next {display:flex!important;justify-content:center!important;align-items:stretch!important;padding:clamp(22px,2.6vw,38px)!important;min-height:0!important;gap:0!important;}
+ .slide.opportunity-detail .state .situation{display:flex;flex-direction:column;justify-content:center;gap:clamp(12px,2vh,22px);height:100%;}
+ .slide.opportunity-detail .state .eyebrow{position:static!important;display:block!important;font-size:clamp(12px,.95vw,15px)!important;line-height:1.2!important;}
+ .slide.opportunity-detail .state p.big{display:block!important;margin:0!important;color:#111816!important;font-size:clamp(23px,2.05vw,32px)!important;line-height:1.24!important;max-width:31ch!important;font-weight:500;letter-spacing:-.025em;text-wrap:pretty;}
+ .slide.opportunity-detail .connector{display:flex!important;align-items:center!important;justify-content:center!important;width:auto!important;height:auto!important;font-size:clamp(64px,5.6vw,88px)!important;line-height:1!important;}
+ .slide.opportunity-detail .opportunity-bottom{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,.75fr);gap:clamp(34px,4vw,70px);border-top:1px solid var(--line);padding-top:clamp(18px,2.7vh,29px);flex:0 0 auto;align-items:start;}
+ .slide.opportunity-detail .opportunity-bottom .label{display:block;font:12px 'IBM Plex Mono',monospace;letter-spacing:.06em;color:var(--petrol);margin-bottom:12px;}
+ .slide.opportunity-detail .intervention h3{font-size:clamp(20px,1.75vw,27px);font-weight:500;line-height:1.23;letter-spacing:-.02em;margin:0 0 17px;max-width:45ch;text-wrap:balance;}
+ .slide.opportunity-detail .capabilities{display:flex;flex-wrap:wrap;gap:10px 23px;}
+ .slide.opportunity-detail .capabilities span{font-size:clamp(14px,1.07vw,17px);line-height:1.38;color:var(--muted);}
+ .slide.opportunity-detail .capabilities span::before{content:'— ';color:var(--petrol);}
+ .slide.opportunity-detail .measurement{border-left:1px solid var(--line);padding-left:clamp(23px,2.2vw,34px);}
+ .slide.opportunity-detail .measurement p{font-size:clamp(17px,1.36vw,21px)!important;line-height:1.45!important;color:var(--ink)!important;max-width:32ch!important;text-wrap:pretty;}
+ .slide.opportunity-detail .footer{margin-top:clamp(16px,2.5vh,30px)!important;}
+}
+@media (min-width:851px) and (max-height:760px){
+ .slide.opportunity-detail .opportunity-head{margin:7px 0 15px!important}
+ .slide.opportunity-detail .opportunity-content{gap:15px!important}
+ .slide.opportunity-detail .transform{min-height:165px!important}
+ .slide.opportunity-detail .state,.slide.opportunity-detail .state.next{padding:20px 24px!important}
+ .slide.opportunity-detail .state p.big{font-size:clamp(20px,1.75vw,26px)!important}
+ .slide.opportunity-detail .opportunity-bottom{padding-top:12px;gap:26px}
+ .slide.opportunity-detail .intervention h3{font-size:20px;margin-bottom:9px}
+ .slide.opportunity-detail .capabilities{gap:4px 16px}
+ .slide.opportunity-detail .capabilities span{font-size:13px}
+ .slide.opportunity-detail .measurement p{font-size:16px!important}
+}
+@media(max-width:850px){
+ .slide.opportunity-detail .opportunity-head{margin:14px 0 22px!important}
+ .slide.opportunity-detail .opportunity-content{display:flex!important;flex-direction:column!important;gap:25px!important;margin:0!important;}
+ .slide.opportunity-detail .transform{display:flex!important;flex-direction:column!important;gap:5px!important;margin:0!important;}
+ .slide.opportunity-detail .state,.slide.opportunity-detail .state.next{padding:20px!important;min-height:120px!important;display:block!important;}
+ .slide.opportunity-detail .state .situation{display:flex;flex-direction:column;gap:12px;}
+ .slide.opportunity-detail .state .eyebrow{position:static!important;display:block;font-size:12px!important;}
+ .slide.opportunity-detail .state p.big{margin:0!important;font-size:21px!important;line-height:1.32!important;}
+ .slide.opportunity-detail .connector{transform:rotate(90deg);align-self:center;height:46px!important;width:60px!important;font-size:55px!important}
+ .slide.opportunity-detail .opportunity-bottom{display:flex;flex-direction:column;gap:24px;border-top:1px solid var(--line);padding-top:20px;}
+ .slide.opportunity-detail .opportunity-bottom .label{font:11px 'IBM Plex Mono',monospace;color:var(--petrol);display:block;margin-bottom:10px;}
+ .slide.opportunity-detail .intervention h3{font-size:21px;font-weight:500;line-height:1.25;margin:0 0 15px;}
+ .slide.opportunity-detail .capabilities{display:flex;flex-wrap:wrap;gap:10px 15px;}
+ .slide.opportunity-detail .capabilities span{font-size:14px;color:var(--muted)}
+ .slide.opportunity-detail .capabilities span::before{content:'— ';color:var(--petrol)}
+ .slide.opportunity-detail .measurement{border-top:1px solid var(--line);padding-top:20px;}
+ .slide.opportunity-detail .measurement p{font-size:18px!important;color:var(--ink)!important;}
+}
+</style><style>
+/* V5 / full-height presentation layout: viewport ownership and projection legibility */
+@media (min-width: 851px) {
+ .slide{padding:clamp(32px,3.9vh,60px) clamp(48px,6vw,112px) clamp(28px,3.4vh,52px);overflow:hidden}
+ .slide .body{flex:1;min-height:0;justify-content:center;width:100%;}
+ .slide-head{margin-top:clamp(12px,1.6vh,22px);margin-bottom:clamp(18px,2.6vh,36px)}
+ .slide .title{max-width:25ch;text-wrap:balance}
+ .slide .title.wide{max-width:32ch}
+ .slide .footer{flex:none;margin-top:clamp(18px,2.3vh,34px);padding-top:clamp(12px,1.5vh,20px)}
+ .opportunity-detail .slide-head{margin-bottom:clamp(14px,2vh,29px)}
+ .opportunity-detail h2.opportunity-title{font-size:clamp(38px,3.6vw,63px);line-height:1.04;letter-spacing:-.044em;max-width:30ch;text-wrap:balance}
+ .opportunity-detail .opportunity-deckline{font-size:clamp(21px,2vw,30px)!important;max-width:65ch!important;color:var(--petrol)!important;font-weight:500;margin-top:clamp(12px,1.8vh,23px);line-height:1.28;text-wrap:balance}
+ .opportunity-detail .body{display:grid;grid-template-rows:minmax(0,1fr) auto auto auto;align-content:stretch;gap:clamp(13px,2.1vh,24px);padding:0 0 clamp(4px,1vh,12px)}
+ .opportunity-detail .transform{margin:0;display:grid;grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr);gap:clamp(14px,2vw,32px);min-height:0;align-items:stretch}
+ .opportunity-detail .state{min-height:0;padding:clamp(24px,3vw,50px);justify-content:space-between;gap:clamp(18px,4vh,55px)}
+ .opportunity-detail .state .big{font-size:clamp(22px,2.1vw,34px);line-height:1.22;max-width:27ch;text-wrap:pretty}
+ .opportunity-detail .eyebrow{font-size:clamp(12px,.9vw,15px)}
+ .opportunity-detail .impact{display:grid;grid-template-columns:minmax(150px,.24fr) 1fr;align-items:center;gap:22px;padding-top:clamp(12px,1.7vh,22px);margin:0!important}
+ .opportunity-detail .impact .label{font-size:clamp(12px,.83vw,14px)}
+ .opportunity-detail .impact strong{font-size:clamp(19px,1.6vw,27px);line-height:1.25;text-wrap:balance}
+ .opportunity-detail .subpoints{margin:0;gap:12px 28px;display:flex;align-items:center}
+ .opportunity-detail .subpoints span{font-size:clamp(12px,.94vw,15px)}
+ .areas{gap:clamp(24px,4vh,52px) clamp(46px,5vw,86px)}
+ .area{padding-top:clamp(16px,2.4vh,27px);grid-template-columns:48px minmax(0,1fr)}
+ .area h3{font-size:clamp(23px,2.2vw,35px);max-width:27ch;text-wrap:balance}
+ .area p{font-size:clamp(17px,1.25vw,21px);max-width:42ch}
+ .area .area-category{font-size:clamp(12px,.9vw,15px)}
+ .slide[data-name="SOH opportunities"] .lead{margin-bottom:clamp(26px,4vh,60px)!important;font-size:clamp(20px,1.7vw,26px)!important}
+}
+@media (min-width:851px) and (max-height:740px){
+ .opportunity-detail .slide-head{margin-bottom:12px}
+ .opportunity-detail h2.opportunity-title{font-size:clamp(31px,3vw,47px)}
+ .opportunity-detail .opportunity-deckline{font-size:19px!important;margin-top:8px}
+ .opportunity-detail .body{gap:10px}
+ .opportunity-detail .state{padding:20px;gap:12px}
+ .opportunity-detail .state .big{font-size:clamp(19px,1.85vw,26px)}
+ .opportunity-detail .impact{padding-top:8px}
+ .opportunity-detail .impact strong{font-size:18px}
+ .opportunity-detail .subpoints span{font-size:12px}
+}
+@media(max-width:850px){
+ .opportunity-detail .opportunity-deckline{color:var(--petrol)!important;font-weight:500;font-size:21px!important;line-height:1.3;margin-top:12px}
+ .opportunity-detail .transform{margin:14px 0}
+ .opportunity-detail .state .big{font-size:clamp(21px,5vw,29px);max-width:unset;line-height:1.28;text-wrap:pretty}
+ .opportunity-detail .state{gap:16px}
+ .opportunity-detail .impact strong{font-size:18px;line-height:1.3}
+ .opportunity-detail h2.opportunity-title{max-width:26ch;font-size:clamp(32px,6.3vw,48px)}
+}
+
+/* V6 — dedicated dark approach; a single neutral canvas for all MetLife cases */
+.slide[data-name="Our approach"]{background:#10474A!important;color:#F0F5F2!important}
+.slide[data-name="Our approach"] .title,
+.slide[data-name="Our approach"] .stage h3{color:#F0F5F2}
+.slide[data-name="Our approach"] .kicker,
+.slide[data-name="Our approach"] .stage .id,
+.slide[data-name="Our approach"] .stage-icon{color:#C7E54A}
+.slide[data-name="Our approach"] p,
+.slide[data-name="Our approach"] .lead{color:#D9E5DF!important}
+.slide[data-name="Our approach"] .stage{border-color:#668780}
+.slide[data-name="Our approach"] .stage:first-child{border-color:#C7E54A}
+.slide[data-name="Our approach"] .footer{border-color:#668780;color:#D0DED7}
+/* MetLife opportunities are an intentional continuous visual section. */
+.slide.opportunity-detail{background:#F2F4F1!important;color:#111816!important}
+.slide.opportunity-detail .kicker,
+.slide.opportunity-detail .impact .label{color:#165B5F!important}
+.slide.opportunity-detail .opportunity-deckline{color:#165B5F!important}
+.slide.opportunity-detail .state,
+.slide.opportunity-detail .state.next{border:0!important;border-top:0!important;border-bottom:0!important;box-shadow:none!important;color:#111816!important}
+.slide.opportunity-detail .state{background:transparent!important}
+.slide.opportunity-detail .state.next{background:#E6EBE7!important}
+.slide.opportunity-detail .state .big{color:#111816!important}
+.slide.opportunity-detail .state .eyebrow,
+.slide.opportunity-detail .subpoints span{color:#59635F!important}
+.slide.opportunity-detail .impact,
+.slide.opportunity-detail .footer{border-color:#C8D0CC!important}
+.slide.opportunity-detail .footer{color:#59635F!important}
+.slide.opportunity-detail .connector{color:#165B5F!important;background:transparent!important}
+.slide.opportunity-detail .connector::after{border-color:#165B5F!important}
+@media print{
+ .slide[data-name="Our approach"]{background:#10474A!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .slide.opportunity-detail{background:#F2F4F1!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+/* V7 — centered, large transition arrow in the SOH opportunity comparisons. */
+@media (min-width:851px) {
+  .slide.opportunity-detail .transform {
+    grid-template-columns: minmax(0,1fr) 112px minmax(0,1.18fr);
+    align-items:stretch;
+  }
+  .slide.opportunity-detail .connector {
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    align-self:stretch;
+    width:112px;
+    height:auto!important;
+    margin:0;
+    font-family:Onest,Arial,sans-serif;
+    font-size:clamp(66px,6.2vw,106px)!important;
+    font-weight:400;
+    line-height:1;
+    background:none!important;
+    transform:none!important;
+  }
+}
+.slide.opportunity-detail .connector::after { display:none!important; content:none!important; }
+@media (max-width:850px) {
+  .slide.opportunity-detail .connector {
+    display:flex!important;
+    justify-content:center!important;
+    align-items:center!important;
+    width:100%!important;
+    height:75px!important;
+    margin:0!important;
+    background:none!important;
+    font-size:70px!important;
+    line-height:1;
+    transform:rotate(90deg)!important;
+  }
+}
+
+/* V10 QA refinement: spacing, projection readability, and compact viewports */
+@media(min-width:851px){
+ .slide .footer{font-size:12px}
+ .slide[data-name="SOH opportunities"] .body{justify-content:center}
+ .slide[data-name="SOH opportunities"] .lead{max-width:78ch!important;font-size:clamp(19px,1.6vw,24px)!important;line-height:1.42}
+ .slide[data-name="SOH opportunities"] .areas{row-gap:clamp(27px,5vh,58px)}
+ .slide[data-name="SOH opportunities"] .area h3{font-size:clamp(25px,2.35vw,37px)}
+ .slide[data-name="SOH opportunities"] .area p{font-size:clamp(17px,1.42vw,22px);line-height:1.38}
+ .opportunity-detail .transform{grid-template-columns:minmax(0,1fr) 94px minmax(0,1.12fr)!important;gap:clamp(10px,1.3vw,22px)!important}
+ .opportunity-detail .connector{width:94px!important;font-size:clamp(67px,5.9vw,96px)!important}
+ .opportunity-detail .state,.opportunity-detail .state.next{position:relative;justify-content:center!important;padding:clamp(52px,5.6vh,75px) clamp(26px,2.5vw,45px) clamp(25px,3vh,40px)!important;gap:0!important}
+ .opportunity-detail .state .eyebrow{position:absolute;top:clamp(16px,2.2vh,28px);left:clamp(26px,2.5vw,45px);font-size:clamp(12px,.9vw,14px)!important}
+ .opportunity-detail .state .big{font-size:clamp(25px,2.17vw,35px)!important;line-height:1.25!important;max-width:29ch!important}
+ .opportunity-detail .impact strong{font-size:clamp(19px,1.6vw,25px)!important}
+ .opportunity-detail .subpoints span{font-size:clamp(12px,1vw,15px)!important}
+ .slide[data-name="Our team"] .person p{font-size:clamp(18px,1.55vw,23px);line-height:1.43;max-width:30ch}
+ .slide[data-name="Our team"] .person h3{font-size:clamp(27px,2.45vw,38px)}
+ .slide[data-name="Selected work"] .project-row{padding:clamp(24px,3vh,38px) 0;grid-template-columns:minmax(0,195px) minmax(0,1fr) minmax(0,1.22fr);gap:clamp(20px,2.1vw,34px)}
+ .slide[data-name="Selected work"] .project-row h3{font-size:clamp(24px,2.25vw,33px);line-height:1.17}
+ .slide[data-name="Selected work"] .project-row p{font-size:clamp(18px,1.48vw,22px);line-height:1.39}
+ .slide[data-name="Selected work"] .project-row .mono{font-size:12px}
+ .slide[data-name="Selected work"] .project-row .tagline{font-size:12px;margin-top:7px}
+ .slide[data-name="Enterprise experience"] .credline p{font-size:clamp(19px,1.7vw,25px);line-height:1.4}
+ .slide[data-name="Enterprise experience"] .split p{font-size:clamp(18px,1.5vw,23px)!important}
+}
+@media(min-width:851px) and (max-height:760px){
+ .slide{padding-top:22px!important;padding-bottom:19px!important}
+ .slide .footer{margin-top:12px!important;padding-top:10px!important}
+ .slide-head{margin-bottom:14px!important}
+ .opportunity-detail .state,.opportunity-detail .state.next{padding:40px 22px 16px!important}
+ .opportunity-detail .state .eyebrow{top:13px;left:22px}
+ .opportunity-detail .state .big{font-size:clamp(20px,1.85vw,26px)!important}
+ .opportunity-detail .body{gap:8px!important}
+ .opportunity-detail .subpoints{gap:5px 17px!important}
+ .opportunity-detail .impact{padding-top:7px!important}
+ .opportunity-detail .impact strong{font-size:17px!important}
+ .slide[data-name="SOH opportunities"] .areas{row-gap:16px}
+ .slide[data-name="SOH opportunities"] .area h3{font-size:clamp(23px,2vw,29px)}
+ .slide[data-name="SOH opportunities"] .area p{font-size:16px}
+ .slide[data-name="Selected work"] .project-row{padding:13px 0;gap:18px}
+ .slide[data-name="Selected work"] .project-row h3{font-size:clamp(21px,1.95vw,27px)}
+ .slide[data-name="Selected work"] .project-row p{font-size:16px}
+ .slide[data-name="Selected work"] .project-row .tagline{font-size:10px;margin-top:2px}
+ .slide[data-name="Our team"] .person p{font-size:17px}
+}
+@media(max-width:850px){
+ .slide{overflow-y:auto!important;overscroll-behavior:contain;padding:40px 24px 82px!important}
+ .deck,.slide{height:100dvh}
+ .slide .body{min-height:auto!important;flex:0 0 auto;justify-content:flex-start!important;margin-top:22px}
+ .slide .footer{margin-top:38px!important;flex-shrink:0;font-size:10px;gap:10px}
+ .slide .footer .number{margin-right:80px}
+ .slide .title{font-size:clamp(32px,7.7vw,48px);max-width:100%}
+ .slide .lead{font-size:18px!important}
+ .slide[data-name="SOH opportunities"] .areas{grid-template-columns:1fr;gap:20px}
+ .slide[data-name="SOH opportunities"] .area h3{font-size:25px}
+ .slide[data-name="SOH opportunities"] .area p{font-size:17px}
+ .opportunity-detail .state,.opportunity-detail .state.next{justify-content:flex-start;min-height:0;padding:21px!important;gap:22px!important}
+ .opportunity-detail .state .big{font-size:23px}
+ .opportunity-detail .connector{height:54px!important;font-size:58px!important}
+ .opportunity-detail .subpoints{gap:8px 16px}
+ .opportunity-detail .subpoints span{font-size:12px}
+ .slide[data-name="Our team"] .person p{font-size:18px}
+ .slide[data-name="Selected work"] .project-row h3{font-size:23px}
+ .slide[data-name="Selected work"] .project-row p{font-size:17px}
+ .slide[data-name="Selected work"] .project-row .tagline{font-size:11px}
+}
+@media print{.slide{overflow:hidden!important}}
+</style><style>
+/* V12 — semantic contrast, restrained emphasis, consistent page indices */
+.slide.opportunity-detail .state.next { background:transparent!important; box-shadow:none!important; }
+.slide.opportunity-detail .state.next .big{color:var(--ink)!important;}
+.slide.opportunity-detail .opportunity-bottom{border-top:0!important; padding-top:0!important;}
+.slide.opportunity-detail .intervention{
+  background:var(--alt)!important;
+  padding:clamp(20px,2.1vw,32px)!important;
+  border-left:3px solid var(--petrol);
+  min-width:0;
+}
+.slide.opportunity-detail .intervention h3{color:var(--ink)!important;}
+.slide.opportunity-detail .measurement{padding-top:18px!important;}
+.closing-original a.source-url{display:inline-block;color:var(--lime);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+.closing-original a.source-url:hover,.closing-original a.source-url:focus-visible{color:var(--fg);outline-offset:5px}
+@media(max-width:850px){.slide.opportunity-detail .intervention{padding:22px!important}}
+</style><style>
+/* V13 targeted corrections: persistent top numbering, matching panels, clean mailto. */
+.cover-page-label{position:absolute;top:23px;left:clamp(24px,6.1vw,112px);font-size:11px!important;z-index:2;color:var(--petrol)!important}
+.slide.opportunity-detail .measurement{background:var(--alt)!important;padding:clamp(20px,2.1vw,32px)!important;border-left:3px solid var(--petrol);min-width:0;margin-top:12px}
+.slide.opportunity-detail .measurement p{color:var(--ink)!important;max-width:100%;overflow-wrap:break-word}
+.closing-original a.source-url{border-bottom:0!important;text-decoration:none!important;padding-bottom:0!important}
+.closing-original a.source-url:hover,.closing-original a.source-url:focus-visible{text-decoration:none!important;border-bottom:0!important}
+@media(max-width:850px){.cover-page-label{top:13px;left:24px}.slide.opportunity-detail .measurement{padding:22px!important}}
+</style><style>
+/* V14: narrow, deliberate fixes, no copy changes except structural split of original experience. */
+.slide[data-name="Introduction"] .cover-page-label{display:none!important}
+.slide[data-name="Our team"] .team{align-items:stretch!important}
+.slide[data-name="Our team"] .person{border-top:2px solid var(--hairline)!important;border-bottom:0!important;padding-top:24px!important}
+.slide[data-name="Our team"] .person:first-child{border-top:2px solid var(--hairline)!important}
+.slide.opportunity-detail[data-name="Insights"] .opportunity-bottom{display:grid!important;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr)!important;gap:0!important;align-items:stretch!important;background:var(--alt)!important;border-left:3px solid var(--petrol)!important;padding:0!important}
+.slide.opportunity-detail[data-name="Insights"] .intervention,.slide.opportunity-detail[data-name="Insights"] .measurement{background:transparent!important;border:0!important;margin:0!important;min-width:0;align-self:stretch!important;padding:clamp(22px,2.2vw,34px)!important}
+.slide.opportunity-detail[data-name="Insights"] .measurement{border-left:1px solid var(--hairline)!important;display:flex;flex-direction:column;justify-content:flex-start}
+.slide.opportunity-detail[data-name="Insights"] .measurement p{margin:0!important;font-size:clamp(17px,1.35vw,21px)!important;line-height:1.45!important}
+.slide[data-name="Enterprise experience"] .body{display:flex!important;flex:1;justify-content:center!important;align-items:stretch!important}
+.experience-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(22px,3vw,55px);width:100%;align-items:stretch;align-content:center}
+.experience-item{border-top:2px solid var(--petrol);padding-top:clamp(20px,2.5vh,30px);display:flex;flex-direction:column;gap:clamp(16px,2vh,25px);min-width:0}
+.experience-label{font:12px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.055em;color:var(--petrol)}
+.experience-item h3{font-size:clamp(23px,2.2vw,34px);font-weight:500;letter-spacing:-.035em;line-height:1.19;text-wrap:balance;margin:0}
+.experience-item p{font-size:clamp(16px,1.34vw,20px);line-height:1.49;color:var(--muted);margin:0;text-wrap:pretty}
+@media(max-width:850px){.slide.opportunity-detail[data-name="Insights"] .opportunity-bottom{grid-template-columns:1fr!important}.slide.opportunity-detail[data-name="Insights"] .measurement{border-left:0!important;border-top:1px solid var(--hairline)!important}.experience-three{grid-template-columns:1fr;gap:24px}.experience-item{gap:11px;padding-top:18px}.experience-item h3{font-size:25px}.experience-item p{font-size:17px}}
+</style>
+<style>
+/* V15: unified horizontal opportunity band across all four SOH detail slides. */
+.slide.opportunity-detail .opportunity-bottom,
+.slide.opportunity-detail[data-name="Insights"] .opportunity-bottom {
+  display:grid!important;
+  grid-template-columns:minmax(0,1.6fr) minmax(0,.95fr)!important;
+  align-items:stretch!important;
+  gap:0!important;
+  margin-top:clamp(12px,2vh,22px)!important;
+  padding:0!important;
+  border:0!important;
+  border-left:3px solid var(--petrol)!important;
+  background:var(--alt)!important;
+  width:100%;
+}
+.slide.opportunity-detail .opportunity-bottom .intervention,
+.slide.opportunity-detail[data-name="Insights"] .opportunity-bottom .intervention {
+  background:transparent!important;
+  border:0!important;
+  padding:clamp(20px,2vw,29px)!important;
+  min-width:0;
+}
+.slide.opportunity-detail .opportunity-bottom .measurement,
+.slide.opportunity-detail[data-name="Insights"] .opportunity-bottom .measurement {
+  background:transparent!important;
+  border:0!important;
+  border-left:1px solid var(--line)!important;
+  padding:clamp(20px,2vw,29px)!important;
+  margin:0!important;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+.slide.opportunity-detail .opportunity-bottom .label {font-size:11px!important;line-height:1.2!important;margin:0 0 12px!important;letter-spacing:.055em!important;}
+.slide.opportunity-detail .opportunity-bottom .intervention h3 {font-size:clamp(20px,1.82vw,27px)!important;line-height:1.18!important;margin:0 0 16px!important;max-width:none!important;}
+.slide.opportunity-detail .opportunity-bottom .capabilities {display:flex!important;flex-wrap:wrap!important;column-gap:19px!important;row-gap:7px!important;margin:0!important;}
+.slide.opportunity-detail .opportunity-bottom .capabilities span {font-size:clamp(13px,1.02vw,15px)!important;line-height:1.35!important;white-space:normal;}
+.slide.opportunity-detail .opportunity-bottom .measurement p {font-size:clamp(17px,1.35vw,20px)!important;line-height:1.36!important;margin:0!important;max-width:none!important;color:var(--ink)!important;}
+/* Equal strength of rule for each member. Keep the original structural top rules. */
+.slide[data-name="Our team"] .team .person,
+.slide[data-name="Our team"] .team .person:first-child {border-top:4px solid var(--petrol)!important;padding-top:21px!important;}
+@media(max-width:850px) {
+ .slide.opportunity-detail .opportunity-bottom,
+ .slide.opportunity-detail[data-name="Insights"] .opportunity-bottom {grid-template-columns:1fr!important;}
+ .slide.opportunity-detail .opportunity-bottom .measurement,
+ .slide.opportunity-detail[data-name="Insights"] .opportunity-bottom .measurement {border-left:0!important;border-top:1px solid var(--line)!important;}
+}
+@media(max-height:720px) and (min-width:851px){
+ .slide.opportunity-detail .opportunity-bottom .intervention,
+ .slide.opportunity-detail .opportunity-bottom .measurement {padding:17px 22px!important;}
+ .slide.opportunity-detail .opportunity-bottom .intervention h3 {font-size:20px!important;margin-bottom:10px!important;}
+ .slide.opportunity-detail .opportunity-bottom .capabilities span {font-size:12.5px!important;}
+ .slide.opportunity-detail .opportunity-bottom .measurement p {font-size:16px!important;}
+}
+</style>
+</head><body><div aria-label="Deck progress" class="progress-wrap"><div class="progress-fill" id="progress-fill"></div></div><main class="deck" id="deck">
+<section class="slide active light-cover" data-name="Introduction"><div class="brandbar"><div class="lrsmark"><div class="wordmark">LeftRight<span style="color:var(--lime)">.</span><small>SYSTEMS</small></div></div><div class="partner"><img alt="MetLife" class="met-logo" onerror="this.style.display='none';this.insertAdjacentHTML('afterend','&lt;span style=&quot;font-size:29px;font-weight:500&quot;&gt;MetLife&lt;/span&gt;')" src="https://commons.wikimedia.org/wiki/Special:FilePath/MetLife_logo.svg"/></div></div><div class="body split"><div><div class="kicker" style="margin-bottom:23px">AI / SYSTEMS / PRODUCTION</div><h1 class="title hero">AI that fits the way your systems work.</h1><div class="spacer"></div><p class="lead">Practical opportunities across the Statement of Health experience, its underlying systems, and the teams operating them.</p></div><div class="rule"><div class="statement">Technology should adapt to the business. Not the other way around.</div><p class="micro" style="margin-top:28px">Consulting, implementation, and adoption — from identifying opportunities to operational solutions in production.</p><div class="cover-spec">METLIFE / STATEMENT OF HEALTH</div></div></div><footer class="footer"><span>LEFTRIGHT SYSTEMS / SOH OPPORTUNITIES</span><span class="number">01 / 11</span></footer></section>
+<section class="slide" data-name="Our approach"><div class="kicker">02 / OUR APPROACH</div><div class="slide-head"><h2 class="title wide">From opportunity to working system.</h2></div><div class="body"><p class="lead">We kick off with existing processes, systems, data, and constraints — no predefined AI solution.</p><div class="rail"><div class="stage"><span class="id">01</span><svg aria-hidden="true" class="stage-icon" fill="none" height="32" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24" width="32"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path><path d="M8 10.5h5"></path></svg><h3>Discover</h3><p>Find friction, measurable value, available data, and constraints.</p></div><div class="stage"><span class="id">02</span><svg aria-hidden="true" class="stage-icon" fill="none" height="32" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24" width="32"><rect height="18" rx="1" width="18" x="3" y="3"></rect><path d="M3 10h18M10 10v11"></path></svg><h3>Design</h3><p>Define the experience, architecture, integrations, and controls.</p></div><div class="stage"><span class="id">03</span><svg aria-hidden="true" class="stage-icon" fill="none" height="32" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24" width="32"><path d="M4 7 12 3l8 4v10l-8 4-8-4z"></path><path d="m4 7 8 4 8-4M12 11v10"></path></svg><h3>Build</h3><p>Implement workflows, business rules, permissions, and human review.</p></div><div class="stage"><span class="id">04</span><svg aria-hidden="true" class="stage-icon" fill="none" height="32" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24" width="32"><path d="M3 12h17m-5-5 5 5-5 5"></path><path d="M7 5v14"></path></svg><h3>Transfer</h3><p>Launch, document, enable teams, and support continuous improvement.</p></div></div></div><footer class="footer"><span>METHOD / PRACTICAL IMPLEMENTATION</span><span class="number">02 / 11</span></footer></section>
+<section class="slide" data-name="SOH opportunities"><div class="kicker">03 / METLIFE / SOH OPPORTUNITIES</div><div class="slide-head"><h2 class="title wide">One experience. Several points of leverage.</h2></div><div class="body"><p class="lead" style="margin-bottom:36px">The ideas below are hypotheses to explore together, not necessarily a 1:1 reflection of MetLife’s current environment.</p><div class="areas"><div class="area"><div class="index">01</div><div><div class="area-category">Customer Experience &amp; Engagement</div><h3>Help applicants complete the journey.</h3><p>AI-guided assistance, progress recovery, and duplicate handling.</p></div></div><div class="area"><div class="index">02</div><div><div class="area-category">Continuous Experience Optimization</div><h3>Make experience improvements repeatable.</h3><p>AI-assisted testing, experiments, and synthetic journey evaluation.</p></div></div><div class="area"><div class="index">03</div><div><div class="area-category">Operational Efficiency</div><h3>Give teams faster and leaner operational context.</h3><p>AI-powered internal assistance, issue triage, and API knowledge.</p></div></div><div class="area"><div class="index">04</div><div><div class="area-category">Data &amp; Insights</div><h3>Turn activity into usable insight.</h3><p>AI-generated patterns, shared journey metrics, and natural-language analytics.</p></div></div></div></div><footer class="footer"><span>SOH / EXPLORATORY OPPORTUNITIES</span><span class="number">03 / 11</span></footer></section>
+<section class="slide opportunity-detail" data-name="Applicant journey"><div class="kicker">04 / SOH OPPORTUNITY / 01</div><div class="slide-head opportunity-head"><h2 class="title wide opportunity-title">Customer Experience &amp; Engagement</h2></div><div class="body opportunity-content">
+<div class="transform">
+<div class="state"><div class="situation"><span class="eyebrow">Friction in the journey</span><p class="big">An applicant is unsure how to proceed and may abandon the SOH form.</p></div></div>
+<div aria-hidden="true" class="connector">&gt;</div>
+<div class="state next"><div class="situation"><span class="eyebrow">A more continuous experience</span><p class="big">A context-aware AI form copilot guides each step, highlights missing information, and helps applicants resume.</p></div></div>
+</div>
+<div class="opportunity-bottom">
+<div class="intervention"><span class="label">PROPOSED OPPORTUNITY</span><h3>AI Form Copilot · Intelligent Drop-off Recovery</h3><div class="capabilities"><span>Form copilot</span><span>Resume later</span><span>Targeted follow-ups</span><span>Duplicate submission detection</span></div></div>
+<div class="measurement"><span class="label">MEASURES TO VALIDATE</span><p>Completion rate · abandonment by step · resumed applications</p></div>
+</div>
+</div><footer class="footer"><span>HYPOTHESIS / REQUIRES BASELINE &amp; VALIDATION</span><span class="number">04 / 11</span></footer></section>
+<section class="slide opportunity-detail" data-name="Experience optimization"><div class="kicker">05 / SOH OPPORTUNITY / 02</div><div class="slide-head opportunity-head"><h2 class="title wide opportunity-title">Continuous Experience Optimization</h2></div><div class="body opportunity-content">
+<div class="transform">
+<div class="state"><div class="situation"><span class="eyebrow">Reactive effort</span><p class="big">Manual testing and scattered research can make changes costly to evaluate.</p></div></div>
+<div aria-hidden="true" class="connector">&gt;</div>
+<div class="state next"><div class="situation"><span class="eyebrow">Continuous learning</span><p class="big">AI-assisted A/B testing, synthetic-user evaluation, automated journey and regression tests.</p></div></div>
+</div>
+<div class="opportunity-bottom">
+<div class="intervention"><span class="label">PROPOSED OPPORTUNITY</span><h3>AI-Assisted A/B Testing · Automated UI Testing &amp; QA</h3><div class="capabilities"><span>Regression scenarios</span><span>A/B testing</span><span>Synthetic user journeys</span><span>UX research hub</span></div></div>
+<div class="measurement"><span class="label">MEASURES TO VALIDATE</span><p>Regression detection · testing time · successful form completion</p></div>
+</div>
+</div><footer class="footer"><span>HYPOTHESIS / VALIDATE EXISTING TEST COVERAGE</span><span class="number">05 / 11</span></footer></section>
+<section class="slide opportunity-detail" data-name="Operational efficiency"><div class="kicker">06 / SOH OPPORTUNITY / 03</div><div class="slide-head opportunity-head"><h2 class="title wide opportunity-title">Operational Efficiency</h2></div><div class="body opportunity-content">
+<div class="transform">
+<div class="state"><div class="situation"><span class="eyebrow">Fragmented context</span><p class="big">Information and operations across SOH systems can be hard to access and investigate.</p></div></div>
+<div aria-hidden="true" class="connector">&gt;</div>
+<div class="state next"><div class="situation"><span class="eyebrow">Connected assistance</span><p class="big">An internal SOH AI assistant provides conversational access to approved tools and documentation, with automated issue triage.</p></div></div>
+</div>
+<div class="opportunity-bottom">
+<div class="intervention"><span class="label">PROPOSED OPPORTUNITY</span><h3>Internal SOH AI Assistant / MCP · Automated Issue Triage</h3><div class="capabilities"><span>API monitoring</span><span>Documentation discovery</span><span>Approved tool access</span><span>Human oversight</span></div></div>
+<div class="measurement"><span class="label">MEASURES TO VALIDATE</span><p>Time to investigate · issue resolution effort · repeated errors</p></div>
+</div>
+</div><footer class="footer"><span>HYPOTHESIS / ACCESS &amp; SECURITY BY DESIGN</span><span class="number">06 / 11</span></footer></section>
+<section class="slide opportunity-detail" data-name="Insights"><div class="kicker">07 / SOH OPPORTUNITY / 04</div><div class="slide-head opportunity-head"><h2 class="title wide opportunity-title">Data &amp; Insights</h2></div><div class="body opportunity-content">
+<div class="transform">
+<div class="state"><div class="situation"><span class="eyebrow">Disconnected signals</span><p class="big">SOH metrics and feedback may be spread across tools, making patterns hard to identify.</p></div></div>
+<div aria-hidden="true" class="connector">&gt;</div>
+<div class="state next"><div class="situation"><span class="eyebrow">A shared operational view</span><p class="big">A shared SOH dashboard, AI-generated insights, and natural-language questions reveal journey bottlenecks.</p></div></div>
+</div>
+<div class="opportunity-bottom">
+<div class="intervention"><span class="label">PROPOSED OPPORTUNITY</span><h3>SOH Analytics Dashboard · AI-Generated Insights</h3><div class="capabilities"><span>Completion funnels</span><span>Segment comparisons</span><span>Pattern detection</span><span>Ask questions in natural language</span></div></div>
+<div class="measurement"><span class="label">QUESTIONS TO EXPLORE</span><p>Where do applicants get stuck? What correlates with successful completion?</p></div>
+</div>
+</div><footer class="footer"><span>HYPOTHESIS / DATA QUALITY &amp; PERMISSIONS FIRST</span><span class="number">07 / 11</span></footer></section>
+<section class="slide" data-name="Our team"><div class="kicker">08 / OUR TEAM</div><div class="slide-head"><h2 class="title wide">Experience across product decisions and production systems.</h2></div><div class="body"><div class="team"><div class="person"><h3>Daniel Lerner</h3><div class="mono">Consulting · Infrastructure · Data</div><p>20+ years across IT consulting, systems, cloud, integration, optimization, and technical support.</p></div><div class="person"><h3>Martin Rosbier</h3><div class="mono">Software · Architecture · Integrations</div><p>Software engineering and architecture, APIs, cloud platforms, integrations, and automation.</p></div><div class="person"><h3>Nico Santos</h3><div class="mono">Product · Roadmap · Prioritization</div><p>Technical product management connecting user needs, business priorities, roadmaps, and implementation.</p></div></div></div><footer class="footer"><span>LEFT RIGHT SYSTEMS / TEAM</span><span class="number">08 / 11</span></footer></section>
+<section class="slide" data-name="Selected work"><div class="kicker">09 / SELECTED WORK</div><div class="slide-head"><h2 class="title wide">AI built into operational workflows — with control where it matters.</h2></div><div class="body"><div class="project-ledger"><div class="project-row"><div class="mono">01 / IDENTITY &amp; SECURITY</div><h3>Internal AI platform with controlled execution</h3><p>Connected knowledge, workflows, and AI tools, with human approval before actions are executed.</p><div class="tagline">MCP · DESKTOP APP · HUMAN APPROVAL</div></div><div class="project-row"><div class="mono">02 / INFRASTRUCTURE</div><h3>Infrastructure copilot</h3><p>Assistance with Terraform configuration, error investigation, and proposed fixes under human supervision.</p><div class="tagline">TERRAFORM · ERROR ANALYSIS · TROUBLESHOOTING</div></div><div class="project-row"><div class="mono">03 / E-COMMERCE</div><h3>AI within an operations dashboard</h3><p>Connected orders, sales, production, and fulfillment workflows to support daily operational decisions.</p><div class="tagline">APIS · WOOCOMMERCE · OPERATIONS</div></div></div><!--Selected implementation examples; no unverified performance improvements are claimed.--></div><footer class="footer"><span>EXPERIENCE / IMPLEMENTATIONS</span><span class="number">09 / 11</span></footer></section>
+<section class="slide" data-name="Enterprise experience"><div class="kicker">10 / RELEVANT EXPERIENCE</div><div class="slide-head"><h2 class="title wide">Enterprise integration is part of the roadmap, not an afterthought.</h2></div><div class="body"><div class="experience-three"><div class="experience-item"><div class="experience-label">Banking &amp; insurance</div><h3>Banking and insurance workflows built around existing APIs and production systems.</h3><p>Reverse engineering of integrations, authentication, data mappings, API contracts, error handling, and workflow automation.</p></div><div class="experience-item"><div class="experience-label">Additional experience</div><h3>Analytics, planning, and integrated content workflows.</h3><p>A track record across enterprise integrations and data-driven platforms, alongside AI-focused implementations.</p></div><div class="experience-item"><div class="experience-label">Why this matters for SOH</div><h3>Any valuable AI feature must work with existing services, data access rules, ownership boundaries, and operational constraints.</h3></div></div></div><footer class="footer"><span>ENTERPRISE / INSURANCE / INTEGRATIONS</span><span class="number">10 / 11</span></footer></section>
+<section class="slide inverse closing-original black-closing" data-name="Next step"><div class="kicker">11 / NEXT STEP</div><div class="body split"><div><h2 class="title hero">Implementing tools is not enough.</h2><p class="closing-decision">We also help define how they are used, with which data, under which rules, and who can make decisions.</p></div><div class="workshop"><div class="mono">NEXT STEP / WORKSHOP</div><h3>Opportunity workshop</h3><p>Identify and prioritize your high-impact pilot.</p><div style="height:35px"></div><div class="meta" style="color:var(--lime)">WORKSHOP OUTPUT</div><p style="margin-top:13px">One prioritized opportunity, initial scope, risks, and next steps to define your pilot.</p><a class="source-url" href="mailto:info@leftright.systems">info@leftright.systems</a></div></div><footer class="footer"><span>LEFTRIGHT.SYSTEMS / CONSULTING &amp; IMPLEMENTATION</span><span class="number">11 / 11</span></footer></section>
+</main><nav aria-label="Slide navigation" class="controls"><button aria-label="Previous slide" id="prev">↑</button><span class="counter" id="counter">01 / 11</span><button aria-label="Next slide" id="next">↓</button></nav><script>const slides=[...document.querySelectorAll('.slide')];let current=0;function show(n){current=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,i)=>{s.classList.toggle('active',i===current);s.setAttribute('aria-hidden',i===current?'false':'true')});document.getElementById('progress-fill').style.width=((current+1)/slides.length*100)+'%';document.getElementById('counter').textContent=String(current+1).padStart(2,'0')+' / '+slides.length;location.hash='slide-'+(current+1)}document.getElementById('prev').onclick=()=>show(current-1);document.getElementById('next').onclick=()=>show(current+1);document.addEventListener('keydown',e=>{if(['ArrowRight','ArrowDown','PageDown',' '].includes(e.key)){e.preventDefault();show(current+1)}if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();show(current-1)}if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1)});let lock=false;document.addEventListener('wheel',e=>{if(Math.abs(e.deltaY)<14||lock)return;lock=true;show(current+(e.deltaY>0?1:-1));setTimeout(()=>lock=false,450)},{passive:true});let touch=0;document.addEventListener('touchstart',e=>{touch=e.changedTouches[0].screenY},{passive:true});document.addEventListener('touchend',e=>{let d=touch-e.changedTouches[0].screenY;if(Math.abs(d)>65)show(current+(d>0?1:-1))},{passive:true});const match=location.hash.match(/slide-(\d+)/);if(match)show(Number(match[1])-1);else show(0);</script></body></html>
